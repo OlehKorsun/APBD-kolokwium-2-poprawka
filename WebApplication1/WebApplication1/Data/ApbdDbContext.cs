@@ -29,7 +29,7 @@ public class ApbdDbContext : DbContext
         {
             new Item(){ItemId = 1, Name = "Item 1", Weight = 5},
             new Item(){ItemId = 2, Name = "Item 2", Weight = 1},
-            new Item(){ItemId = 3, Name = "Item 3", Weight = 167},
+            new Item(){ItemId = 3, Name = "Item 3", Weight = 16},
         });
 
 
@@ -43,9 +43,9 @@ public class ApbdDbContext : DbContext
 
         modelBuilder.Entity<Character>().HasData(new List<Character>()
         {
-            new Character(){CharacterId = 1, FirstName = "John", LastName = "Doe", CurrentWeight = 10, MaxWeight = 100},
-            new Character(){CharacterId = 2, FirstName = "Jane", LastName = "Queque", CurrentWeight = 15, MaxWeight = 250},
-            new Character(){CharacterId = 3, FirstName = "Jinx", LastName = "Pipjpo", CurrentWeight = 5, MaxWeight = 10},
+            new Character(){CharacterId = 1, FirstName = "John", LastName = "Doe", CurrentWeight = 5, MaxWeight = 100},
+            new Character(){CharacterId = 2, FirstName = "Jane", LastName = "Queque", CurrentWeight = 1, MaxWeight = 250},
+            new Character(){CharacterId = 3, FirstName = "Jinx", LastName = "Pipjpo", CurrentWeight = 16, MaxWeight = 100},
         });
 
 

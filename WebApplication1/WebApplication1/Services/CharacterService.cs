@@ -28,9 +28,10 @@ public class CharacterService : ICharacterService
         
         var characters = await _context.Characters
             .Include(b => b.Backpacks)
-            .ThenInclude(i => i.Item)
+                .ThenInclude(i => i.Item)
             .Include(ct => ct.CharacterTitles)
-            .ThenInclude(t => t.Title).Where(c => c.CharacterId == characterId).ToListAsync();
+                .ThenInclude(t => t.Title).Where(c => c.CharacterId == characterId)
+            .ToListAsync();
 
 
         var result = characters.Select(c => new CharacterDTO()
